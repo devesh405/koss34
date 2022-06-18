@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" href="js/bootstrap.js">
+<link rel="stylesheet" href="style2.css">
+	<title></title>
+	<style >*{
+	margin:0px;
+	padding: 0px;
+}
+body{
+	background-image: url(https://coolbackgrounds.io/images/unsplash/josh-bean-medium-9501ba9f.jpg);
+	background-attachment: fixed;
+	background-size: cover ;
+	font-family: new time roman;
+}
+h1{
+	font-size: 40px;
+	color: white;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+.label{
+	font-size: 22px;
+	margin-top: 20px;
+	font-weight: normal;
+	color: white;
+}
+.form-control{
+	background: white ;
+	border: 0px;
+	border-radius: 0px;
+	border-bottom: 2px solid white;
+	font-size: 21px;
+	color: black;
+margin-top: 20px;
+}
+small{
+	font-size: 18px;
+	color: gray;
+}
+option{
+	color: #666;
+}
+.btn-info{
+	margin-top: 30px;
+	margin-left: 150px;
+	width: 180px;
+	font-size: 19px;
+	border-radius: 1000px;
+}
+.col-md-6{
+	background: rgba(0, 0, 0, 0.4);
+	height: 760px;
+	box-shadow: -1px 1px 60px 10px white ;
+}.dropbtn {
+  background-color: white;
+  color: black;
+  padding: 16px;
+  font-size:20px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #3e8e41;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+
+		.dropdown-content{
+			display: none;
+
+		}
+		.roll{
+			display: none;
+		}
+</style>
+<script src="send.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-3"></div>
+		<div class="col-md-6">
+			<h1 class="text-center">Registeration Form</h1>
+			<!-- make a row in col-md-6 for label and textbox -->
+			
+
+			<label class="label col-md-3 control-label">First Name:</label>
+			<div class="col-md-9">
+				<input type="text" class="form-control" name="name" placeholder="Enter your first name ">
+			</div>
+			<!--close-->
+				<!-- make a row in col-md-6 for label and textbox -->
+			<label class="label col-md-3 control-label">Last Name:</label>
+			<div class="col-md-9">
+				<input type="text" class="form-control" name="name" placeholder="Enter your last name ">
+			</div>
+			<!--close-->	
+			<!-- make a row in col-md-6 for label and textbox -->
+			<label class="label col-md-3 control-label">E-mail:</label>
+			<div class="col-md-9">
+				<input type="text" class="form-control" name="name" placeholder="Enter your vaild E-mail  ">
+			</div>
+			<!--close-->
+				<!-- make a row in col-md-6 for label and textbox -->
+			<label class="label col-md-3 control-label">Gender:</label>
+			<div class="col-md-9">
+				<select class="form-control">
+					<option>Male</option>
+					<option>Female</option>
+					<option>Other</option>
+				</select>
+			</div>
+			<!--close-->
+			<br>
+<div class="dropdown">
+  <button id="myBtn" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+  	<br>
+  <!-- 	<div id="Student">Student</div>
+
+ -->
+<button id="Student">Student</button> <br>
+ <!-- <a href="#Student" id="Student">Student</a> <br> -->
+<button id="Professor">Professor</button> <br>
+    <script>
+    	document.getElementById("myBtn").onclick = function() {myFunction()};
+
+function myFunction() {
+  document.getElementById("myDropdown").style.display="inline";
+
+}   </script> <br>
+
+<div class="roll" id="number">	<label class="label col-md-3 control-label">Roll Number</label>
+<input type="text" class="form-control" name="name" placeholder="Enter your roll number">
+<br>
+	<label class="label col-md-3 control-label">Department</label>
+		<input type="text" class="form-control" name="name" placeholder="Enter your Department ">
+		</div>
+		 <script>
+		 	// next
+		 	 </script> <br>
+
+<div class="roll" id="number1">	<label class="label col-md-3 control-label">Employee ID</label>
+<input type="text" class="form-control" name="name" placeholder="Enter your Employee ID">
+<br>
+	<label class="label col-md-3 control-label">Department</label>
+		<input type="text" class="form-control" name="name" placeholder="Enter your Department ">
+		</div>
+		 <script>
+    	document.getElementById("Professor").onclick = function() {himFunction()};
+    		document.getElementById("Student").onclick = function() {himFunction2()};
+
+function himFunction() {
+  document.getElementById("number1").style.display="inline";
+	document.getElementById("number").style.display="none";
+
+}
+function himFunction2() {
+  document.getElementById("number").style.display="inline";
+	document.getElementById("number1").style.display="none";
+
+}   </script>
+</div>
+</div>
+<br><br>
+
+		<input type="Submit" name="Submit" value="Submit" class="btn btn-primary btn-block btn-lg">
+
+		</div>
+	
+		<div class="col-md-3"></div>
+	</div>
+</div>
+
+</body>
+</html>
